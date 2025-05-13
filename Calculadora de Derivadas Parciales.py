@@ -66,7 +66,7 @@ def main():
         print(f"Variables detectadas: {', '.join([str(var) for var in variables_presentes])}")
         
         # Solicitar la variable respecto a la cual derivar
-        variable_derivacion = input("Variable respecto a la cual derivar: ")
+        variable_derivacion = input("Variable respecto a la cual desea derivar: ")
         
         # Verificar que la variable ingresada sea válida
         if variable_derivacion not in ['x', 'y', 'z']:
@@ -203,7 +203,7 @@ def graficar_funcion_bivariable(funcion, derivada, variables, var_derivacion):
         ax1.set_zlabel('f(x, y)')
         fig.colorbar(surf1)
         
-        # Graficar derivada
+        # Graficar derivada solicitada
         ax2 = fig.add_subplot(122, projection='3d')
         surf2 = ax2.plot_surface(X, Y, Z_d, cmap='inferno', alpha=0.8)
         ax2.set_title(f'Derivada parcial respecto a {var_derivacion}')
