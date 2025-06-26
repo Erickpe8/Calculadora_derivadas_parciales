@@ -44,7 +44,16 @@ Esta herramienta facilita la comprensión visual de las derivadas parciales y ap
 4. Observa la derivada parcial
 
 ---
+## Video del proyecto 🎥
+- [Explicación del proyecto](https://youtu.be/phOc49ZBe78?si=VyfiGjAS-yPkG5He)
 
+<div align="center">
+  <a href="https://youtu.be/phOc49ZBe78?si=VyfiGjAS-yPkG5He" target="_blank">
+  <img src="https://github.com/user-attachments/assets/4083f0ff-2a6a-40c5-ab05-a08310c623d6" alt="Calculadora de Derivadas Parciales" width="800">
+</div>
+
+
+--- 
 ## Muchas gracias por llegar hasta aqui 
 Si estan interesados en conocer un poco más a fondo este proyecto o saber como realizar el proceso de instalación no duden en contactarme, lo pueden hacer por mis redes sociales las cuales aparecen en mi perfir de GitHub o via correo electronico ericksperezc@gmail.com
 
