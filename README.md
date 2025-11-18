@@ -1,63 +1,111 @@
 # Calculadora de Derivadas Parciales 🔣🧠
 
-La Calculadora de Derivadas Parciales es una herramienta diseñada para calcular derivadas parciales de funciones multivariables. A través de una interfaz por consola, el usuario puede ingresar funciones en variables como `x`, `y` y `z`, y obtener su derivada parcial respecto a la variable deseada. Además, el sistema permite visualizar gráficamente tanto la función original como su derivada, con gráficos 2D o 3D según corresponda.
+La **Calculadora de Derivadas Parciales** es una herramienta en Python diseñada para analizar y derivar funciones multivariables de forma simbólica.  
+Permite calcular derivadas parciales respecto a las variables `x`, `y` o `z`, corregir expresiones mal escritas mediante un validador inteligente y visualizar funciones con gráficos automáticos en 2D y 3D.
 
-Esta herramienta facilita la comprensión visual de las derivadas parciales y apoya el estudio del cálculo multivariable.
-
----
-
-## Características 🛠️
-
-- **Cálculo de derivadas parciales** de funciones multivariables.
-- **Validación automática** de funciones (sin, cos, exp, entre otras...).
-- **Visualización gráfica**:
-  - Funciones de una variable: gráfico 2D.
-  - Funciones de dos variables: gráfico 3D.
-  - Funciones de tres variables: puedes fijar una y graficar con las otras dos.
-- Interfaz por consola clara y guiada.
-- Soporte para expresiones simbólicas gracias a `SymPy`.
+Su objetivo es facilitar la comprensión de los conceptos del cálculo multivariable y ofrecer una experiencia robusta, clara y educativa.
 
 ---
 
-## Funcionamiento 📐
+## ✨ Características principales
 
-1. **Ingreso de datos**:
-   - El usuario introduce una función simbólica (ej. `x**2 * y + sin(x)`).
-   - El sistema detecta las variables presentes (`x`, `y`, `z`).
+- 🔢 **Cálculo simbólico de derivadas parciales** usando SymPy.  
+- 🧠 **Smart Validator PRO** para corregir errores comunes como:
+  - `sinx` → `sin(x)`
+  - `3x` → `3*x`
+  - `xy` → `x*y`
+  - `x^2` → `x**2`
+  - `logx` → `log(x)`
+  - `e^x` → `exp(x)`
+- ✔ **Validación completa** de funciones matemáticas permitidas.
+- 📊 **Visualización gráfica automática**:
+  - Funciones de 1 variable → gráfico 2D.
+  - Funciones de 2 variables → superficie 3D.
+  - Funciones de 3 variables → análisis simbólico.
+- 🧩 **Arquitectura modular** que facilita mantenimiento y ampliación.
+- 📚 **Guía PDF integrada**, accesible desde el menú de ayuda.
 
-2. **Cálculo de derivada parcial**:
-   - El usuario elige respecto a qué variable derivar.
-   - Se calcula la derivada con `SymPy`.
+---
 
-3. **Visualización**:
-   - Si la función tiene 1 variable: se muestra un gráfico 2D.
-   - Si tiene 2 variables: se genera un gráfico 3D.
-   - Si tiene 3 variables: puedes fijar una variable para graficar en 3D con las otras dos.
+## 🗂 Estructura del proyecto
+
+```
+Calculadora_derivadas_parciales/
+├── main.py
+├── core/
+│   ├── parser.py
+│   ├── validator.py
+│   ├── derivative.py
+│   ├── plotter.py
+│   ├── smart_validator.py
+│   ├── utils.py
+│   └── pdf_viewer.py
+└── docs/
+    └── Guia_de_Uso.pdf
+```
 
 ---
 
-## Uso de la Aplicación ▶️
+## ⚙️ Requisitos
 
-1. Ejecuta el archivo `main.py`.
-2. Ingresa la función cuando se solicite.
-3. Indica la variable respecto a la cual quieres derivar (`x`, `y` o `z`).
-4. Observa la derivada parcial
+- Python 3.10+
+- Librerías necesarias:
+  ```
+  sympy
+  numpy
+  matplotlib
+  ```
 
 ---
-## Video del proyecto 🎥
-- [Explicación del proyecto](https://youtu.be/phOc49ZBe78?si=VyfiGjAS-yPkG5He)
+
+## 📐 Funcionamiento
+
+1. El usuario ingresa una función simbólica.  
+2. El Smart Validator PRO analiza la expresión y propone correcciones si es necesario.  
+3. La función se valida y se interpreta simbólicamente.  
+4. Se detectan automáticamente las variables presentes.  
+5. Se solicita la variable respecto a la cual derivar.  
+6. Se calcula la derivada parcial.  
+7. Se genera una gráfica si la función tiene 1 o 2 variables.
+
+---
+
+## ▶️ Uso de la aplicación
+
+1. Ejecutar el programa con:
+   ```
+   python main.py
+   ```
+2. Seleccionar una opción del menú principal.  
+3. Ingresar la función cuando sea solicitada.  
+4. Elegir la variable respecto a la cual se desea derivar.  
+5. Revisar la derivada parcial y, si aplica, la gráfica generada.
+
+---
+
+## 🎥 Video del proyecto
+
+Puedes ver la presentación actual del proyecto en el siguiente enlace.  
+En ella se explica su funcionamiento general y el propósito de la herramienta.  
+**Próximamente se publicará una versión actualizada del video acorde a la nueva refactorización.**
+
+🔗 **Video en YouTube:**  
+https://youtu.be/phOc49ZBe78?si=VyfiGjAS-yPkG5He
 
 <div align="center">
   <a href="https://youtu.be/phOc49ZBe78?si=VyfiGjAS-yPkG5He" target="_blank">
-  <img src="https://github.com/user-attachments/assets/4083f0ff-2a6a-40c5-ab05-a08310c623d6" alt="Calculadora de Derivadas Parciales" width="800">
+    <img src="https://github.com/user-attachments/assets/4083f0ff-2a6a-40c5-ab05-a08310c623d6" width="800" alt="Video del Proyecto - Calculadora de Derivadas Parciales">
+  </a>
 </div>
 
+---
 
---- 
-## Muchas gracias por llegar hasta aqui 
-Si estan interesados en conocer un poco más a fondo este proyecto o saber como realizar el proceso de instalación no duden en contactarme, lo pueden hacer por mis redes sociales las cuales aparecen en mi perfir de GitHub o via correo electronico ericksperezc@gmail.com
+## 💬 Gracias por llegar hasta aquí
 
-- 🎥 [YouTube](https://www.youtube.com/@ErickPerez_8)
-- 📸 [Instagram](https://www.instagram.com/erickperez_8/)
+Si deseas conocer más sobre este proyecto o aprender a instalarlo y ejecutarlo, puedes visitar las redes sociales disponibles en el perfil del repositorio.
 
-¡Gracias por visitar mi perfil! 💻✨
+- 🎥 YouTube: https://www.youtube.com/@ErickPerez_8  
+- 📸 Instagram: https://www.instagram.com/erickperez_8/
+
+¡Gracias por visitar este proyecto! 💻✨
+
